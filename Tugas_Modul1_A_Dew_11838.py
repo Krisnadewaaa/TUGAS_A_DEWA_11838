@@ -8,8 +8,8 @@ mode_path = 'rf_diabetes_model.pkl'
 if os.path.exists(model_path):
     try:
         with open(model_path, 'rb') as f:
-            loaded_model = pickle. load(f)
-        rf_model = loaded model[0]
+            loaded_model = pickle.load(f)
+        rf_model = loaded_model[0]
 
         st.title("Prediksi Diabetes")
 
@@ -23,7 +23,7 @@ if os.path.exists(model_path):
         diabetesPedigreeFunction = st.slider("Diabetes Pedigree Function", min_value=0.07, max_value=2.42, step=0.1)
         age = st.slider("Age", min_value=21, max_value=81, step=1)
 
-        input _data = [[pregnancies, glucose, bloodPressure, skinThickness, insulin, bmi,
+        input_data = [[pregnancies, glucose, bloodPressure, skinThickness, insulin, bmi,
                         diabetesPedigreeFunction, age]]
 
         if st.button("Prediksi!"):
