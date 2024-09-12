@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import OS
-
+#e
 mode_path = 'rf_diabetes_model.pkl'
 
 if os.path.exists(model_path):
