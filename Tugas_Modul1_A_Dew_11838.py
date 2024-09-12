@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 #e
-mode_path = 'rf_diabetes_model.pkl'
+model_path = 'rf_diabetes_model.pkl'
 
 if os.path.exists(model_path):
     try:
